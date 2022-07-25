@@ -7,6 +7,141 @@
     <title>Cross Fênix - Aqui Você Renasce</title>
 </head>
 <body>
+    <!-- Header -->
+    <header id="header">
+        <a href="#" class="logo">Cross Fênix</a>
+        <ul>
+            <li><a href="#home" onclick="toggle()">Home</a></li>
+            <li><a href="#about" onclick="toggle()">Sobre Nós</a></li>
+            <li><a href="#team" onclick="toggle()">Equipe</a></li>
+            <li><a href="#Contact" onclick="toggle()">Contato</a></li>
+        </ul>
+    <div class="toggle" onclick="toggle()"></div>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner" id="home">
+        <h2>Cross Fênix</h2>
+        
+    </section>
+
+    <!-- About -->
+    <section class="sec" id="about">
+        <div class="content">
+            <div class="mxw800p">
+                <h3>Sobre Nós</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </p>
+            </div>
+        </div>
+    </section>
     
+    <!-- Team -->
+    <section class="sec" class="secTeam" id="team">
+        <div class="content">
+            <div class="mxw800p">
+                <h3>Equipe</h3>
+                <p>Equeipe Cross Fênix.</p>
+            </div>
+            <div class="teamBx">
+                <div class="member">
+                    <div class="imgBx">
+                        <img src="img/img-team/1.jpg">
+                    </div>
+                    <div class="details">
+                        <h2>Michele Rodrigues<br><span>Owner e Headcoach</span>
+                            <a class="instagram" target="_blank" href="https://www.instagram.com/miarsilva/"><span>@miarsilva</span></a></h2> 
+                    </div>
+                </div>
+
+                <div class="member">
+                    <div class="imgBx">
+                        <img src="img/img-team/2.jpg">
+                    </div>
+                    <div class="details">
+                        <h2>Rodrigo Rodrigues<br><span>Owner</span>
+                        <a class="instagram" target="_blank" href="https://www.instagram.com/rodrigo_c_santos/"><span>@rodrigo_c_santos
+                        </span></a></h2>
+                    </div>
+                </div>
+
+                <div class="member">
+                    <div class="imgBx">
+                        <img src="img/img-team/3.jpg">
+                    </div>
+                    <div class="details">
+                        <h2>Felipe Mantovani<br><span>Coach</span>
+                        <a class="instagram" target="_blank" href="https://www.instagram.com/fe.mantovani/"><span>@fe.mantovani</span></a></h2>
+                    </div>
+                </div>
+
+                <div class="member">
+                    <div class="imgBx">
+                        <img src="img/img-team/4.jpg">
+                    </div>
+                    <div class="details">
+                        <h2>Guilherme Almeida<br><span>Coach</span>
+                        <a class="instagram" target="_blank" href="https://www.instagram.com/guilherme_.a/"><span>@guilherme_.a</span></a></h2>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact -->
+    <section class="sec contact" id="Contact">
+        <div class="content">
+            <div class="mxw800p">
+                <h3>Contato</h3>
+                <p>Nos envie uma mensagem para sugestões, criticas, parcerias e afins.</p>
+            </div>
+            <div class="contactForm">
+                <form>
+                    <div class="row100">
+                        <div class="inputBx50">
+                            <input type="text" name="" placeholder="Nome Completo">
+                        </div>
+                        <div class="inputBx50">
+                            <input type="text" name="" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="row100">
+                        <div class="inputBx100">
+                            <textarea placeholder="Messagem"></textarea>
+                        </div>
+                    </div>
+                    <div class="row100">
+                        <div class="inputBx100">
+                            <input type="submit" name="" value="Enviar">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="sci">
+                <ul>
+                    <li><a href="https://www.facebook.com/crossfenix.itaquera" target="blank"><img src="img/img-icons/facebook.png"></a></li>
+                   
+                    <li><a href="https://www.instagram.com/cross.fenix/" target="blank"><img src="img/img-icons/instagram.png"></a></li>
+                    <li><a href="https://whatsa.me/551122050200/?t=Oi" target="blank"><img src="img/img-icons/whatsapp.png"></a></li>
+                   
+                </ul>
+            </div>
+            <p class="copyright">Desing & Desenvolvido por <b><a style="text-decoration: none;" class="copyright" href="https://br.linkedin.com/in/desantanaeduardo" target="blank">Eduardo Santana ❤</a></b></p>
+        </div>
+    </section>
+
+    <!-- Script // 
+    Script para rolar a página suavimente -->
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+
+        function toggle(){
+            var header = document.querySelector("header");
+            header.classList.toggle("active");
+        }
+    </script>
 </body>
 </html>
