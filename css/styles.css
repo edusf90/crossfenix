@@ -147,6 +147,13 @@ p {
   color: #fff;
 }
 
+.enderecoMapa {
+  border: 2px solid orange;
+  width: 100%;
+  height: 100px;
+  color: orange;
+}
+
 /* EQUIPE / TEAM */
 .teamBx {
   position: relative;
