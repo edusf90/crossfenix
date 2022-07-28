@@ -29,14 +29,14 @@ header {
 header.sticky {
   padding: 5px 100px;
   background: #fff;
-  border-bottom: 1px solid rgba(255, 115, 0);
-  /* border-bottom: 1px solid rgba(0,0,0,0.1); */
+  border-bottom: 1px solid rgb(255, 115, 0);
 }
 
 header .logo {
   position: relative;
   font-weight: 700;
   color: #fff;
+
   text-decoration: none;
   font-size: 2em;
   text-transform: uppercase;
@@ -83,6 +83,8 @@ header.sticky ul li a {
 
 .banner h2 {
   color: #fff;
+  -webkit-text-stroke-width: 1.5px; /* largura da borda */
+  -webkit-text-stroke-color: rgb(255, 115, 0); /* cor da borda */
   font-size: 90px;
   text-transform: uppercase;
   text-align: center;
@@ -92,7 +94,6 @@ header.sticky ul li a {
 a.instagram {
   color: #fff;
   font-size: 90px;
-
   text-align: center;
   line-height: 1em;
 }
