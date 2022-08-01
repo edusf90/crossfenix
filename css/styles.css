@@ -29,7 +29,7 @@ header {
 header.sticky {
   padding: 5px 100px;
   background: #fff;
-  border-bottom: 1px solid rgb(255, 115, 0);
+  border-bottom: 1px solid #000;
 }
 
 header .logo {
@@ -67,14 +67,14 @@ header ul li a {
 }
 header.sticky .logo,
 header.sticky ul li a {
-  color: rgba(255, 115, 0);
+  color: #000;
 }
 
 .banner {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background-image: url('../img/img-wallpaper/bg2.jpeg');
+  background-image: url('../img/img-wallpaper/bg.png');
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -84,7 +84,7 @@ header.sticky ul li a {
 .banner h2 {
   color: #fff;
   -webkit-text-stroke-width: 1.5px; /* largura da borda */
-  -webkit-text-stroke-color: rgb(255, 115, 0); /* cor da borda */
+  -webkit-text-stroke-color: #000; /* cor da borda */
   font-size: 90px;
   text-transform: uppercase;
   text-align: center;
@@ -128,7 +128,6 @@ h3 {
   font-size: 40px;
   font-weight: 200;
   margin-bottom: 10px;
-  /* border: 2px solid rgb(225,115, 0); */
 }
 
 p {
@@ -148,14 +147,7 @@ p {
   color: #fff;
 }
 
-.enderecoMapa {
-  border: 2px solid orange;
-  width: 100%;
-  height: 250px;
-  color: orange;
-}
-
-/* EQUIPE / TEAM */
+/* Projetos */
 .teamBx {
   position: relative;
   display: grid;
@@ -167,11 +159,9 @@ p {
 
 .teamBx .member {
   position: relative;
-  background: rgb(255, 115, 0);
-  /* border-bottom: 1px solid rgba(255, 115, 0); */
-
-  min-height: 300px;
-  width: 250px;
+  background: #000;
+  height: 170px;
+  min-width: 300px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -204,7 +194,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(255, 115, 0, 0.7);
+  background: rgba(0, 0, 0, 0.9);
   transition: 0.5s;
   opacity: 0;
 }
@@ -215,7 +205,6 @@ p {
 
 .teamBx .member .details h2 {
   color: #fff;
-  /* text-transform: uppercase; */
   font-size: 20px;
   letter-spacing: 1px;
 }
@@ -228,7 +217,7 @@ p {
 
 .contact {
   /* background: #000; */
-  background: rgb(255, 115, 0);
+  background: #000;
 }
 
 .contact h3,
@@ -289,7 +278,7 @@ p {
 
 .contactForm .row100 input[type='submit'] {
   background: #fff;
-  color: rgb(225, 115, 0);
+  color: #000;
   max-width: 100px;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -336,9 +325,13 @@ p {
   display: none;
 }
 #about {
-  background-color: rgb(225, 115, 0);
+  background-color: #000;
   color: #fff;
 }
+.iconesContato {
+  color: #fff;
+}
+
 /* RESPONSIVIDADE */
 
 @media (max-width: 992px) {
@@ -355,9 +348,9 @@ p {
     top: 4px;
     width: 100%;
     height: 2px;
-    background: rgb(225, 115, 0);
+    background: #000;
     z-index: 1;
-    box-shadow: 0 10px 0 rgb(225, 115, 0);
+    box-shadow: 0 10px 0 #000;
     transition: 0.5s;
   }
   .toggle:after {
@@ -366,7 +359,7 @@ p {
     bottom: 4px;
     width: 100%;
     height: 2px;
-    background: rgb(225, 115, 0);
+    background: #000;
     z-index: 1;
     transition: 0.5s;
   }
@@ -406,7 +399,7 @@ p {
 
   header .logo,
   header ul li a {
-    color: rgb(225, 115, 0);
+    color: #000;
   }
 
   .banner {
